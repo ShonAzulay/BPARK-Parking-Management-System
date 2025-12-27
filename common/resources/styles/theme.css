@@ -1,0 +1,313 @@
+/* ========== Global Root ========== */
+.root {
+    -fx-background-image: url("/styles/background.png");
+	-fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-font-family: 'Segoe UI', sans-serif;}
+
+/* ========== Titles ========== */
+#title {
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00aaff;
+    -fx-effect: dropshadow(gaussian, #005f99, 10, 0.3, 0, 2);
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+
+.subtitle-label {
+    -fx-font-size: 15px;
+    -fx-text-fill: #dddddd;
+    -fx-font-weight: normal;
+    -fx-wrap-text: true;
+}
+
+/* ========== Management Screen Buttons ========== */
+/* ========== Text Fields ========== */
+.text-field,
+.password-field {
+    -fx-background-radius: 10;
+    -fx-border-color: #3a79d8;
+    -fx-border-radius: 10;
+    -fx-padding: 6 10;
+    -fx-text-fill: white;
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-prompt-text-fill: #aaaaaa;
+}
+
+/* ========== Labels & Links ========== */
+.label {
+    -fx-text-fill: white;
+}
+
+#loginlabel {
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.hyperlink {
+    -fx-text-fill: #00aaff;
+}
+
+/* ========== Back / Exit Bottom Bar Buttons ========== */
+.bottom-button {
+    -fx-background-radius: 30;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-padding: 8 20;
+}
+
+
+
+rt-legend {
+    -fx-background-color: rgba(255, 255, 255, 0.85);
+    -fx-background-radius: 12;
+    -fx-border-color: rgba(0, 0, 0, 0.1);
+    -fx-border-radius: 12;
+    -fx-padding: 8;
+}
+/* View member details */
+
+.list-view {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 8;
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-radius: 10;
+    -fx-border-width: 1.2;
+}
+
+.list-view .viewport {
+    -fx-background-color: transparent;
+}
+
+.list-cell {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-padding: 6 10;
+}
+
+.list-cell:filled:selected, .list-cell:filled:selected:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+.glass-list {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-background-insets: 0;
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-radius: 10;
+    -fx-border-width: 1.2;
+}
+
+
+.glass-list .viewport {
+    -fx-background-color: transparent;
+}
+
+
+.glass-list .list-cell {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-padding: 8 12;
+}
+
+
+.glass-list .list-cell:filled:selected,
+.glass-list .list-cell:filled:selected:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+.glass-list .scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ========== Styling for memberStatusBarChart ========== */
+#memberStatusBarChart {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-radius: 12;
+    -fx-padding: 10;
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-radius: 12;
+}
+
+#memberStatusBarChart .chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+#memberStatusBarChart .chart-legend {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+#memberStatusBarChart .chart-title {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+#memberStatusBarChart .axis-label,
+#memberStatusBarChart .axis-tick-mark,
+#memberStatusBarChart .chart-axis {
+    -fx-text-fill: white;
+}
+
+
+/* ========== Styling for parkingDurationBarChart ========== */
+#parkingDurationBarChart {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-radius: 12;
+    -fx-padding: 10;
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-radius: 12;
+}
+
+#parkingDurationBarChart .chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+#parkingDurationBarChart .chart-legend {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+#parkingDurationBarChart .chart-title {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+#parkingDurationBarChart .axis-label,
+#parkingDurationBarChart .axis-tick-mark,
+#parkingDurationBarChart .chart-axis {
+    -fx-text-fill: white;
+}
+
+#parkingDurationBarChart .chart-vertical-grid-lines,
+#parkingDurationBarChart .chart-horizontal-grid-lines {
+    -fx-stroke: transparent;
+}
+
+#memberStatusBarChart .chart-vertical-grid-lines,
+#memberStatusBarChart .chart-horizontal-grid-lines {
+    -fx-stroke: transparent;
+}
+
+/*APP Screen */
+/* General background for AnchorPane */
+.anchor-pane {
+    -fx-background-color: linear-gradient(to bottom right, #f9f9f9, #e8e8f0);
+}
+
+/* Big Titles */
+.label:has-font[font-size="24"] {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e1e2f;
+}
+
+/* Buttons (default)* */
+.button {
+    -fx-background-radius: 30;
+    -fx-background-color: linear-gradient(to bottom, #00c6ff, #0072ff); /* Default blue */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+}
+
+/* Buttons (hover) */
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #0072ff, #0055cc);
+}
+
+
+/* Hyperlinks */
+.hyperlink {
+    -fx-text-fill: #0066cc;
+    -fx-underline: true;
+}
+.hyperlink:hover {
+    -fx-text-fill: #003366;
+}
+
+/* TextArea */
+.text-area {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-background-insets: 0;
+    -fx-background-radius: 10;
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-radius: 10;
+    -fx-border-width: 1.2;
+}
+
+
+.text-area .content {
+    -fx-background-color: rgba(255, 255, 255, 0.08); /* כאן הקסם */
+    -fx-background-radius: 10;
+    -fx-padding: 8;
+}
+
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+
+.text-area .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+.scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-background-radius: 8;
+}
+
+
+
+/* Info Labels (green feedback) */
+#resetMessage {
+    -fx-text-fill: green;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+}
+
+/* ======= Global Title Style ======= */
+.title-label {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 5, 0.2, 0, 2);
+    -fx-alignment: center;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 8;
+}
+
+.chart-legend-item {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+#connectButton {
+    -fx-font-size: 11.7px;
+}
